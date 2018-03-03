@@ -38,17 +38,17 @@
         // highlight config 代码高亮的highlight的加载
         hljs.initHighlightingOnLoad();
 
-        // numbering for pre>code blocks
-        $(function() {
-            $('pre code').each(function() {
-                var lines = $(this).text().split('\n').length - 1;
-                var $numbering = $('<ul/>').addClass('pre-numbering');
-                $(this).addClass('has-numbering').parent().append($numbering);
-                for (var i = 1; i <= lines; i++) {
-                    $numbering.append($('<li/>').text(i));
-                }
-            });
-        });
+        // numbering for pre>code blocks 这个是添加高亮的代码的行号的
+        // $(function() {
+        //     $('pre code').each(function() {
+        //         var lines = $(this).text().split('\n').length - 1;
+        //         var $numbering = $('<ul/>').addClass('pre-numbering');
+        //         $(this).addClass('has-numbering').parent().append($numbering);
+        //         for (var i = 1; i <= lines; i++) {
+        //             $numbering.append($('<li/>').text(i));
+        //         }
+        //     });
+        // });
 
         var toc = $('.toc');
         // toc config
