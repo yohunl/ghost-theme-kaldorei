@@ -35,7 +35,7 @@
             scrollToTop();
         });
 
-        // highlight config
+        // highlight config 代码高亮的highlight的加载
         hljs.initHighlightingOnLoad();
 
         // numbering for pre>code blocks
